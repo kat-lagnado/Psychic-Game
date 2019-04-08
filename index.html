@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Trigger Random</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Added link to the jQuery library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Added a link to Bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="text/javascript"></script>
 </head>
+
 <body>
+  <h1>"Guess what letter I am thinking of?"</h1>
+  <h4>Wins:</h4>
+  <p id="wins"></p>
 
-  <div class="jumbotron">
+  <h4>Losses:</h4>
+  <p id="losses"></p>
 
-    <h1 class="text-left">what's your football team!!!</h1>
-    <div class="text-left">
+  <h4>Guesses left:</h4>
+  <p id="guessesLeft"></p>
 
-            <!-- Here we have our button for generating random numbers (#random-button) -->
-            <button id="random-button" class="btn btn-primary btn-lg fa fa-question"></button>
-      
-          </div>
-      
-        </div>
+  <h4>Your guesses so far: </h4>
 
-        <h1 class="text-left" id="random number"></h1>
 
-        <script type="text/javascript">
+  <input type="text" onkeypress="myFunction()">
 
-            $(document).ready(function);
+  <script src="/assets/javascript/game.js"></script>
+</body>
 
-            $("random")
+</html>
